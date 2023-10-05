@@ -1,10 +1,10 @@
 #include "easyppm.h"
 
-#include "../../../../../../Program Files/JetBrains/CLion 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/stdio.h"
-#include "../../../../../../Program Files/JetBrains/CLion 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h"
-#include "../../../../../../Program Files/JetBrains/CLion 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h"
-#include "../../../../../../Program Files/JetBrains/CLion 2023.2.2/bin/mingw/x86_64-w64-mingw32/include/string.h"
-#include "../../../../../../Program Files/JetBrains/CLion 2023.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+#include <stdarg.h>
 
 static void easyppm_abort(PPM* ppm, const char* fmt, ...);
 static int  easyppm_is_grey(ppmcolor c);

@@ -10,9 +10,13 @@
 class Lampe
 {
 public:
-    Lampe(vec3 pos, float intensite, ppmcolor color);
+    Lampe(point3 pos, float intensite, ppmcolor color) : _position(pos) , _intensite(intensite), _color(color) {}
 
-    vec3 _position = {0, 0, 0};
-    float _intensite = 1.0;
+    inline const point3& position() { return _position; }
+    inline const float intensite() { return _intensite; }
+
+private:
+    point3 _position;
+    float _intensite;
     ppmcolor _color = {255, 0, 0};
 };
